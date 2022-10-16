@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="http://fonts.cdnfonts.com/css/scoreboard" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h3>HOME</h3>
+            <div id="home">0</div>
+            <div class="buttons">
+                <button onclick="addOnePointHome()">+1</button>
+                <button onclick="addTwoPointsHome()">+2</button>
+                <button onclick="addThreePointsHome()">+3</button>
+            </div>
+        </div>
+        <div>
+            <h3>AWAY</h3>
+            <div id="away">0</div>
+            <div class="buttons">
+                <button onclick="addOnePointAway()">+1</button>
+                <button onclick="addTwoPointsAway()">+2</button>
+                <button onclick="addThreePointsAway()">+3</button>
+            </div>
+        </div>
+    </div>
+    <button onclick="newGame()" class="new-game">New Game</button>
+    <script src="index.js"></script>
+</body>
+</html>
